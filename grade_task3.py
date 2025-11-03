@@ -18,3 +18,4 @@ def test_neural_net_layer_with_negatives():
     weights = np.array([-2, 1])
     expected_output = np.array([0, 7])  # ReLu([-3, 7]) = [0, 7]
     np.testing.assert_array_equal(neural_net_layer(inputs, weights), expected_output, "Failed on negative matrix values")
+    

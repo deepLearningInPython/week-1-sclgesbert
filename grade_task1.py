@@ -10,3 +10,4 @@ def test_step_negative():
 
 def test_step_zero():
     assert step(0) == -1, "Failed on zero input"
+

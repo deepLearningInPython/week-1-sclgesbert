@@ -30,7 +30,7 @@ def ReLu(x, cutoff = 0):
     out = []
     for element in x:
         if element > cutoff:
-            out.append(el)
+            out.append(element)
         elif element <= cutoff:
             out.append(cutoff)
     return numpy.array(out)

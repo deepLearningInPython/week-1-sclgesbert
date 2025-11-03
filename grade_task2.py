@@ -18,3 +18,4 @@ def test_relu_empty_array():
     np.testing.assert_array_equal(ReLu(array.copy()), expected_output, "Failed on empty array")
 
 
+
