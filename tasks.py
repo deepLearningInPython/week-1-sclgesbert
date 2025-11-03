@@ -26,7 +26,7 @@ def step(num):
 
 # Your code here:
 # -----------------------------------------------
-def ReLu(numpy, cutoff = 0):
+def ReLu(x, cutoff = 0):
     out = []
     for el in numpy:
         if el > cutoff:
@@ -46,7 +46,7 @@ def ReLu(numpy, cutoff = 0):
 
 # Your code here:
 # -----------------------------------------------
-def neural_net_layer(numpy_np, numpy_p):
-    z = numpy_np @ numpy_p
+def neural_net_layer(x_np, x_p):
+    z = x_np @ x_p
     return ReLu(z)
 # ------------------------------------------
