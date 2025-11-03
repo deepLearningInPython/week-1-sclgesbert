@@ -27,13 +27,13 @@ def step(num):
 # Your code here:
 # -----------------------------------------------
 def ReLu(numpy, cutoff = 0):
-    new = ()
+    out = []
     for el in numpy:
         if el > cutoff:
-            new.append(el)
+            out.append(el)
         else:
-            new.append(cutoff)
-    return new
+            out.append(cutoff)
+    return np.array(out)
 # -----------------------------------------------
 
 
