@@ -33,7 +33,7 @@ def ReLu(numpy, cutoff = 0):
             out.append(el)
         elif el < cutoff:
             out.append(cutoff)
-    return Numpy.array(out)
+    return numpy.array(out)
 # -----------------------------------------------
 
 
