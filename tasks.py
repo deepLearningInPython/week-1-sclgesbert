@@ -28,10 +28,10 @@ def step(num):
 # -----------------------------------------------
 def ReLu(x, cutoff = 0):
     out = []
-    for el in x:
-        if el > cutoff:
+    for element in x:
+        if element > cutoff:
             out.append(el)
-        elif el <= cutoff:
+        elif element <= cutoff:
             out.append(cutoff)
     return numpy.array(out)
 # -----------------------------------------------
