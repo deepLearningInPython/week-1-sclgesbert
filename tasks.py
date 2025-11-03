@@ -33,6 +33,7 @@ def ReLu(numpy, cutoff = 0):
             new.append(el)
         else:
             new.append(cutoff)
+    return new
 # -----------------------------------------------
 
 
@@ -45,6 +46,7 @@ def ReLu(numpy, cutoff = 0):
 
 # Your code here:
 # -----------------------------------------------
-def neural_net_layer():
-
+def neural_net_layer(numpy_np, numpy_p):
+    z = numpy_np @ numpy_p
+    return ReLu(z)
 # ------------------------------------------
