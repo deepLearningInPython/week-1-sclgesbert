@@ -12,10 +12,8 @@ import numpy
 
 # Your code here:
 # -----------------------------------------------
-
-def step
-
-
+def step(num):
+    return 1 if num > 0 else -1
 # -----------------------------------------------
 
 
@@ -28,9 +26,13 @@ def step
 
 # Your code here:
 # -----------------------------------------------
-def ReLu
-
-
+def ReLu(numpy, cutoff = 0):
+    new = ()
+    for el in numpy:
+        if el > cutoff:
+            new.append(el)
+        else:
+            new.append(cutoff)
 # -----------------------------------------------
 
 
@@ -43,8 +45,6 @@ def ReLu
 
 # Your code here:
 # -----------------------------------------------
-
-def neural_net_layer
-
+def neural_net_layer():
 
 # ------------------------------------------
