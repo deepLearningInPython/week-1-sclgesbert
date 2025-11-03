@@ -28,7 +28,7 @@ def step(num):
 # -----------------------------------------------
 def ReLu(x, cutoff = 0):
     out = []
-    for el in numpy:
+    for el in x:
         if el > cutoff:
             out.append(el)
         elif el < cutoff:
